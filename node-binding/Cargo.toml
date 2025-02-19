@@ -1,0 +1,17 @@
+[package]
+edition = "2021"
+name = "node-binding"
+version = "0.1.0"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+napi = { version = "2.16.16", default-features = false, features = ["full"] }
+napi-derive = "2.16.13"
+algo = { workspace = true }
+
+[build-dependencies]
+napi-build = "2"
