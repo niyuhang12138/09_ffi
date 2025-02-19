@@ -1,5 +1,5 @@
 [workspace]
-members = ["node-binding", "algo"]
+members = ["algo", "node-binding", "python-binding"]
 resolver = "2"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html

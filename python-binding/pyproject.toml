@@ -1,0 +1,26 @@
+[project]
+name = "algo"
+version = "0.1.0"
+description = "Add your description here"
+authors = [
+    { name = "niyuhang", email = "2830481694@qq.com" }
+]
+dependencies = []
+readme = "README.md"
+requires-python = ">= 3.8"
+
+[build-system]
+requires = ["maturin>=1.2,<2.0"]
+build-backend = "maturin"
+
+[tool.rye]
+managed = true
+dev-dependencies = [
+    "pip>=25.0.1",
+    "ipython>=8.32.0",
+]
+
+[tool.maturin]
+python-source = "python"
+module-name = "algo._lowlevel"
+features = ["pyo3/extension-module"]
