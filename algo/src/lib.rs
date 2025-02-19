@@ -1,6 +1,9 @@
 mod algo;
+mod matrix;
+mod vector;
 
 pub use algo::*;
+pub use matrix::*;
 
 #[cfg(test)]
 mod tests {

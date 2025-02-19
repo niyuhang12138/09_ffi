@@ -1,6 +1,7 @@
 #![deny(clippy::all)]
 
 mod algo;
+mod matrix;
 
 pub use algo::JsAlgo;
 
